@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国冰雪运动风采 - 首页</title>
+    <style>
+        /* 全局重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        /* 容器固定1000px宽度，居中显示 */
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        /* 头部样式 */
+        header {
+            background: #d92121;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* 主体内容网格布局 */
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 0 20px 40px;
+        }
+
+        /* 卡片样式 */
+        .card {
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: #d92121;
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            color: #d92121;
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+
+        .card-content p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            background: #d92121;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .card-content a:hover {
+            background: #b91c1c;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background: #f8f8f8;
+            padding: 20px 0;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header>
+            <h1>中国冰雪运动 · 拼搏向上</h1>
+            <p>2022 年，中国北京举办第 24 届冬季奥运会， 让我们来了解一下冰雪运动的魅力， 看看中国健儿的风采</p>
+        </header>
+
+        <!-- 主体内容 -->
+        <main>
+            <!-- 武大靖卡片 -->
+            <div class="card">
+                <img src="images/wudajing.jpg" alt="武大靖">
+                <div class="card-content">
+                    <h2>武大靖</h2>
+                    <p>中国短道速滑运动员，男子500米短道速滑世界纪录保持者、奥运会纪录保持者，平昌冬奥会短道速滑男子500米冠军，中国男子短道速滑奥运金牌第一人。</p>
+                    <a href="wudajing.html">查看详情</a>
+                </div>
+            </div>
+
+            <!-- 陈露卡片 -->
+            <div class="card">
+                <img src="images/chenlu.jpg" alt="陈露">
+                <div class="card-content">
+                    <h2>陈露</h2>
+                    <p>中国花样滑冰女子单人滑运动员，中国花样滑冰史上第一个世界冠军，1994年利勒哈默尔冬奥会铜牌、1998年长野冬奥会铜牌得主。</p>
+                    <a href="chenlu.html">查看详情</a>
+                </div>
+            </div>
+
+            <!-- 申雪/赵宏博卡片 -->
+            <div class="card">
+                <img src="images/shenzhao.jpg" alt="申雪/赵宏博">
+                <div class="card-content">
+                    <h2>申雪 / 赵宏博</h2>
+                    <p>中国花样滑冰双人滑传奇组合，2010年温哥华冬奥会冠军，多次斩获世锦赛冠军，为中国花样滑冰实现冬奥金牌零的突破。</p>
+                    <a href="shenxue_zhaohongbo.html">查看详情</a>
+                </div>
+            </div>
+
+            <!-- 冰壶运动卡片 -->
+            <div class="card">
+                <img src="images/binghu.jpg" alt="冰壶运动">
+                <div class="card-content">
+                    <h2>冰壶运动</h2>
+                    <p>又称“冰上象棋”，是一项兼具技巧与策略的团队运动，中国冰壶队在国际赛场屡创佳绩，展现了中国冰雪运动的全面发展。</p>
+                    <a href="binghu.html">查看详情</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- ========== 新增：底部补充文本和图片区块 ========== -->
+     <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国冰雪运动</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        /* 底部补充内容区块整体样式 */
+        .extra-content {
+            width: 100%;
+            padding: 40px 20px;
+            background-color: #f8f9fa; /* 浅灰背景提升层次感 */
+            margin-top: 50px;
+        }
+
+        /* 标题样式 */
+        .extra-content h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            border-bottom: 2px solid #165dff; /* 蓝色底边框点缀 */
+            padding-bottom: 10px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 内容容器：桌面端图文并排，移动端堆叠 */
+        .content-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px; /* 图文间距 */
+            align-items: center;
+        }
+
+        /* 图片组容器：控制两张图片同行+间距 */
+        .img-group {
+            flex: 1;
+            min-width: 400px; /* 移动端最小宽度 */
+            display: flex;
+            gap: 100px; /* 图片之间的间距 */
+            justify-content: left ;
+        }
+
+        /* 图片样式：自适应+圆角+阴影 */
+        .img-group img {
+            width: 100%;
+            max-width: 500px; /* 限制图片最大宽度 */
+            height: auto; /* 保持宽高比 */
+            border-radius: 8px; /* 圆角 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 轻微阴影提升质感 */
+            object-fit: cover; /* 图片裁剪适配 */
+        }
+
+        /* 文本容器样式 */
+        .text-wrap {
+            flex: 2;
+            min-width: 300px; /* 移动端最小宽度 */
+        }
+
+        /* 文本段落样式 */
+        .text-wrap p {
+            font-size: 16px;
+            line-height: 1.8; /* 行高提升可读性 */
+            color: #34495e;
+            margin-bottom: 15px;
+            text-align: justify; /* 文本两端对齐 */
+        }
+
+        /* 最后一段文本取消底部间距 */
+        .text-wrap p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 响应式适配：小屏幕调整 */
+        @media (max-width: 768px) {
+            .extra-content h1 {
+                font-size: 24px;
+            }
+            .img-group {
+                flex-direction: column; /* 移动端图片垂直排列 */
+                gap: 15px;
+            }
+            .img-group img {
+                max-width: 100%; /* 移动端图片全屏宽 */
+            }
+            .text-wrap p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 底部补充文本和图片区块 -->
+    <section class="extra-content">
+        <h1>2022年冬季奥运会项目门票</h1>
+        <div class="content-wrap">
+            <!-- 图片容器：专门控制两张图片同行+间距 -->
+            <div class="img-group">
+                <img src="images/menpiao1.png" alt="2022冬季奥运会花样滑冰项目门票">
+                <img src="images/menpiao2.png" alt="2022冬季奥运会短道速滑项目门票">
+            </div>
+            <div class="text-wrap">
+               
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+        <!-- 页脚 -->
+        <footer>
+            <p>© 2025 中国冰雪运动风采 | 拼搏向上 · 永不言弃</p>
+        </footer>
+    </div>
+</body>
+</html>
